@@ -1,0 +1,20 @@
+.filterContainer h2 {
+    font-size: 1rem;
+}
+
+.filterContainer .dropdown {
+    width: 100%;
+}
+
+.lockerList .col, .lockerList .col-sm-3 {
+    min-height: 100px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.lockerList .col > div, .lockerList .col-sm-3 > div {
+    height: 100%;
+    padding-top: 1.8rem;
+    border: 5px solid #00b600;
+}
