@@ -1,25 +1,27 @@
-function FillLockerList(maxLocker, rowCount){
+function FillLockerList(maxRowLocker, rowCount){
     const lockerList = document.getElementById("LockerList");
+    const lockerRange = document.getElementById("LockerRange");
     let lockerCount = 0;
 
-    for(let i = 0; i < maxLocker; i++)
+    // Checking if LockerList exist
+    if (lockerList)
     {
-        const rowLocker = document.createElement("div");
-        rowLocker.classList = "row";
-        for(let y = 0; y < rowCount; y++)
+        for(let i = 0; i < rowCount; i++)
         {
-            lockerCount++;
-            const colLocker = document.createElement("div");
-            const numContainer = document.createElement("div");
-            const lockerNum = document.createElement("p");
-            lockerNum.innerHTML = lockerCount;
-            numContainer.append(lockerNum);
-            colLocker.classList = "col";
-            colLocker.append(numContainer);
-            rowLocker.append(colLocker);
-            lockerList.append(rowLocker);
+            const rowLocker = document.createElement("div");
+            rowLocker.classList = "row";
+            for(let y = 0; y < maxRowLocker; y++)
+            {
+                lockerCount++;
+                rowLocker.innerHTML += `<button class="col btn-locker" onclick="LockerSelected(${lockerCount})"><div><p>${lockerCount}</p></div></button>`;
+                lockerList.append(rowLocker);
+            }
         }
+        let maxLockerCount = String((maxRowLocker * rowCount));     // Get Max locker count
+        let padding = new Array(3 - maxLockerCount.length +         // Zero's to put infront of locker # for display purposes
+            1).join('0');
+        let paddedCount = padding + maxLockerCount;                 // Combine padding and max locker count
+        console.log(padding);
+        lockerRange.innerHTML = "Locker # 001 - " + paddedCount;
     }
 }
-
-FillLockerList(5, 5);

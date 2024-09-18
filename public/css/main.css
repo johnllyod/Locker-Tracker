@@ -1,5 +1,9 @@
+@import "./variables.css";
 @import "./top_nav.css";
+@import "./main.css";
+@import "./home.css";
 @import "./locker.css";
+@import "./components.css";
 
 * {
     margin: 0;
