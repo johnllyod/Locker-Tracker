@@ -1,0 +1,11 @@
+:root{
+    --text-color: #1B0A35;
+    --secondary-text-color: #fff5f0;
+    --background-color: #f1edeb;
+    --primary-color: #BF00FF;
+    --secondary-color: #6063C3;
+
+    --locker-border-color: black;
+    --locker-inner-border-color: #00b600;
+    --locker-hover-color: #c7ffc7;
+}
