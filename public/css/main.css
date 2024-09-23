@@ -1,0 +1,11 @@
+@import "./variables.css";
+@import "./top_nav.css";
+@import "./main.css";
+@import "./home.css";
+@import "./locker.css";
+@import "./components.css";
+
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
