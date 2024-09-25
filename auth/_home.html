@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOCK Home</title>
+</head>
+<body>
+    <!-- demo / logout operations only  -->
+    <h1>Hello, logged in.</h1>
+    <button type="submit" id="logout">Logout</button>
+
+    <!-- please add this script in home.js / nav.js  -->
+    <script type="module">
+        import { handleLogout } from "./auth.js";
+
+        const logout = document.getElementById("logout");
+        logout.addEventListener("click", async () => {
+            await handleLogout();
+        });
+        
+    </script>
+</body>
+</html>

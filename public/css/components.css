@@ -1,0 +1,19 @@
+.btn {
+    border: none;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
+}
+.btn:hover {
+    opacity: 0.95;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
+}
+.btn:active {
+    opacity: 1;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
+}
+
+.btn-locker:hover {
+    background-color: var(--locker-hover-color);
+}

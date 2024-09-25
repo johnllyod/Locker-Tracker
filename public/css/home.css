@@ -1,0 +1,18 @@
+.quickInfo {
+    gap: 3px;
+    min-height: 256px;
+}
+
+.totalData {
+    padding: 10vh 0;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.totalData h2 {
+    color: var(--secondary-text-color);
+}
+
+.totalData p {
+    color: var(--text-color);
+}
