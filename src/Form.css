@@ -1,0 +1,55 @@
+.user-locker-form {
+  width: 100%;
+  margin: 10vh 0;
+  padding: 5vh 0vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 5px 10px #80808031;
+}
+
+.form-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-locker-form {
+  display: table;
+}
+
+.form-inputs p {
+  display: table-row;
+}
+
+.form-inputs input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.form-inputs label,
+.form-inputs input {
+  display: table-cell;
+}
+
+.form-btn {
+  margin: 2vh 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-btn button {
+  margin-bottom: 10px;
+}
